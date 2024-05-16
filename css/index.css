@@ -1,0 +1,198 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background-color: #f6eff4;
+}
+
+header {
+  min-height: 13dvh;
+  background-color: #1d1d1e;
+}
+
+main {
+  min-height: 80dvh;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+main h2 {
+  font-size: 2.8rem;
+  padding-bottom: 2.5rem;
+  color: #1d1d1e;
+  font-weight: 400;
+  padding-top: 3rem;
+}
+
+main p {
+  padding-bottom: 3rem;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  color: #1d1d1e;
+}
+
+span {
+  font-weight: 800;
+  color: #a02279;
+}
+
+main .part-one {
+  width: 50%;
+  padding-right: 5rem;
+}
+
+main .part-two {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 80%;
+  margin-left: 20rem;
+}
+
+main .part-two img {
+  max-height: 9rem;
+  float: left;
+}
+
+main .part-two .group1 {
+  margin-top: 80%;
+}
+
+main .part-two .group2 {
+  margin-bottom: 80%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#searchLocation {
+  padding: 10px;
+  border: 1px solid #b6b6b6;
+  border-radius: 5px 0 0 5px;
+  width: 17rem;
+  height: 2.7rem;
+}
+
+#searchLocation::placeholder {
+  font-size: 0.7rem;
+}
+
+#searchButton {
+  background-color: #a02279;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 2.7rem;
+  width: 9.5rem;
+  font-size: 0.7rem;
+}
+
+.liner {
+  min-height: 9dvh;
+  background-color: #a02279;
+}
+
+section {
+  min-height: 120dvh;
+  background-color: #f6eff4;
+}
+
+section:nth-of-type(2) {
+  min-height: 86dvh;
+  background-color: #a02279;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+section .part-one {
+  width: 35%;
+  padding-right: 2rem;
+}
+
+section .part-one h2 {
+  font-size: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+section .part-one p {
+  padding-bottom: 2rem;
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+}
+
+section .part-one button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 7rem;
+  color: #a02279;
+  font-size: 0.8rem;
+  background-color: #f0f0f0;
+}
+
+section .part-one button:hover {
+  box-sizing: inset 1px 2px;
+  background: linear-gradient(
+    124.4deg,
+    rgb(230, 230, 230) 10.8%,
+    rgb(200, 200, 200) 87.34%
+  );
+  cursor: pointer;
+}
+
+section .part-two {
+  position: relative;
+  padding-left: 4rem;
+  height: 100%;
+}
+
+section .part-two .m1 {
+  position: absolute;
+  bottom: -4rem;
+  left: 15rem;
+}
+
+section .part-two .m1 img {
+  max-height: 17rem;
+}
+section .part-two .m2 img {
+  max-height: 18rem;
+}
+section .part-two .m3 img {
+  max-height: 15rem;
+}
+
+section .part-two .m2 {
+  position: absolute;
+  bottom: -12rem;
+  left: 4rem;
+}
+
+section .part-two .m3 {
+  position: absolute;
+  bottom: -14rem;
+  left: 18rem;
+}
+
+footer {
+  min-height: 38dvh;
+  background-color: #1d1d1e;
+}

@@ -17,7 +17,7 @@ header {
   background-color: #ffffff;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 2;
 }
 
 nav {
@@ -46,6 +46,10 @@ nav li {
   text-decoration: none;
   font-size: 1rem;
   list-style-type: none;
+}
+
+.active {
+  color: #a02279;
 }
 
 nav li a:hover {
@@ -380,4 +384,45 @@ footer {
 
 .footer-links li:hover {
   color: #a02279;
+}
+
+/* js functionalitoes */
+#backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  backdrop-filter: blur(0px) brightness(100%) contrast(100%) saturate(100%);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  background-color: #00000080;
+  align-items: center;
+  justify-content: center;
+}
+
+#wallet {
+  position: fixed;
+  bottom: 33%;
+  right: 35%;
+  width: 27rem;
+  height: 16rem;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  display: block;
+  z-index: 10;
+}
+
+#wallet h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Responsiveness */
+@media (min-width: 300px) and (max-width: 600px) {
+  header {
+    display: none;
+  }
 }

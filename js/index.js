@@ -7,16 +7,7 @@ const svg = document.getElementById("svg");
 const hamburgerIcon = document.getElementById("logo2");
 const menu = document.getElementById("menu2");
 const searchIcon = document.getElementById("search-top");
-const search = document.getElementById("search-container");
-
-function toggleMenu() {
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-    console.log(menu.style.display);
-  } else {
-    menu.style.display = "none";
-  }
-}
+const search = document.getElementById("search-container2");
 
 wallet_button.addEventListener("click", () => {
   backdrop.style.display = "block";
@@ -30,8 +21,23 @@ document.addEventListener("click", (event) => {
   }
 });
 
+function toggleMenu() {
+  if (menu.style.display === "none") {
+    menu.style.display = "block";
+    console.log(menu.style.display);
+  } else {
+    menu.style.display = "none";
+  }
+}
+
 hamburgerIcon.addEventListener("click", toggleMenu);
 
-searchIcon.addEventListener("click", () => {
-  search.style.display = "block";
-});
+function toggleSearch() {
+  if (search.style.display === "none") {
+    search.style.display = "block";
+  } else {
+    search.style.display = "none";
+  }
+}
+
+searchIcon.addEventListener("click", toggleSearch);

@@ -105,7 +105,7 @@ nav button:hover {
 }
 
 main {
-  padding: 0 5rem;
+  padding: 2.5rem 5rem;
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -144,7 +144,7 @@ main .part-two {
   align-items: center;
   justify-content: center;
   max-height: 80%;
-  margin-left: 21rem;
+  margin-left: 15rem;
 }
 
 main .part-two img {
@@ -165,12 +165,57 @@ main .part-two .group2 {
   align-items: center;
 }
 
+#search-container2 {
+  display: flex;
+  align-items: center;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 7%;
+  top: 1;
+  left: 0;
+  z-index: 40;
+  background: #a02279;
+  justify-content: center;
+  align-content: center;
+}
+
+#searchLocation2 {
+  padding: 10px;
+  border: 1px solid #b6b6b6;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+  height: 1.7rem;
+}
+
+.searchdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+#searchButton2 {
+  background-color: #a02279;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 1.7rem;
+  width: 30%;
+  font-size: 0.8rem;
+  border: 1px solid #b6b6b6;
+}
+
 #searchLocation {
   padding: 10px;
   border: 1px solid #b6b6b6;
   border-radius: 5px 0 0 5px;
   width: 17rem;
   height: 2.7rem;
+  visibility: none;
 }
 
 #searchLocation::placeholder {
@@ -506,150 +551,7 @@ footer {
 }
 
 /* Responsiveness */
-@media (min-width: 162px) and (max-width: 299px) {
-  header {
-    min-height: 12dvh;
-    background-color: #a02279;
-    color: #ffffff;
-  }
-
-  nav {
-    display: flex;
-    padding: 0 2rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-    padding-top: 1.5rem;
-    flex-direction: column;
-  }
-
-  main h2 {
-    padding-top: 2rem;
-  }
-
-  main .part-two img {
-    max-height: 6rem;
-  }
-
-  main .part-two .group1 > img,
-  .group2 > img {
-    margin-bottom: 1.5rem;
-  }
-
-  .search-container {
-    display: none;
-  }
-
-  main .part-two .group1 {
-    margin-top: 0;
-    gap: 1.5rem;
-    float: none;
-  }
-
-  main .part-two .group2 {
-    margin-top: 0;
-    margin-bottom: 3rem;
-    gap: 1.5rem;
-    float: none;
-  }
-
-  main {
-    min-height: 80dvh;
-    padding: 0 2rem;
-    flex-direction: column;
-  }
-
-  main .part-one {
-    width: 100%;
-    padding-right: 0px;
-  }
-
-  main .part-two {
-    width: 100%;
-    margin-left: 0rem;
-    align-items: start;
-    gap: 1.5rem;
-  }
-
-  .liner {
-    padding: 0.5rem 2rem;
-    display: none;
-  }
-
-  .liner2 {
-    padding: 0.5rem 2rem;
-    display: block;
-    min-height: 9vh;
-    background-color: #a02279;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .liner2 img {
-    max-height: 2rem;
-  }
-
-  .card-parent {
-    gap: 2rem;
-    padding: 2.2rem 1.5rem;
-    justify-content: center;
-  }
-
-  section .part-one {
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-bottom: 3rem;
-  }
-
-  section:nth-of-type(2) {
-    padding: 0;
-    min-height: 70vh;
-  }
-
-  section .part-two {
-    display: none;
-  }
-
-  footer {
-    flex-direction: column-reverse;
-    justify-content: center;
-    padding: 0;
-  }
-  .footer-links {
-    display: flex;
-    gap: 1rem;
-    padding-right: 0;
-  }
-
-  footer .logo > * {
-    padding-right: 0;
-    padding-top: 1.5rem;
-  }
-
-  footer .icons > * {
-    padding-right: 0rem;
-  }
-
-  footer .icons {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-top: 2rem;
-  }
-
-  .logo {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 160px) and (max-width: 319px) {
   header {
     min-height: 13dvh;
     background-color: #a02279;
@@ -668,6 +570,9 @@ footer {
     height: 100%;
     text-decoration: none;
     padding-top: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
   }
 
   nav .search-top {
@@ -710,10 +615,11 @@ footer {
 
   main h2 {
     padding-top: 2rem;
+    font-size: 2rem;
   }
 
   main .part-two img {
-    max-height: 6rem;
+    max-height: 5rem;
   }
 
   main .part-two .group1 > img,
@@ -832,22 +738,63 @@ footer {
   }
 }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 480px) {
   header {
-    min-height: 12dvh;
+    min-height: 13dvh;
     background-color: #a02279;
     color: #ffffff;
   }
 
+  nav #menu1 {
+    display: none;
+  }
+
   nav {
     display: flex;
-    padding: 0 2rem;
+    padding: 0 0.9rem;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     text-decoration: none;
     padding-top: 1.5rem;
-    flex-direction: column;
+  }
+
+  nav .search-top {
+    display: flex;
+  }
+  nav menu {
+    display: none;
+  }
+
+  nav .logo {
+    display: flex;
+  }
+
+  nav button {
+    border: 1px solid white;
+    border-radius: 0;
+  }
+
+  nav .search {
+    display: block;
+    border: 1px solid white;
+    height: 2rem;
+  }
+
+  nav .logo img {
+    display: none;
+  }
+
+  nav .logo .logo2 {
+    display: block;
+    padding-right: 0.5rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav .logo .logo2 img {
+    height: 1rem;
+    cursor: pointer;
   }
 
   main h2 {
@@ -855,7 +802,7 @@ footer {
   }
 
   main .part-two img {
-    min-height: 6rem;
+    max-height: 6rem;
   }
 
   main .part-two .group1 > img,
@@ -878,10 +825,11 @@ footer {
     margin-bottom: 3rem;
     gap: 1.5rem;
     float: none;
+    margin: auto;
   }
 
   main {
-    padding: 0 2rem;
+    padding: 0 1.3rem;
     flex-direction: column;
   }
 
@@ -891,11 +839,9 @@ footer {
   }
 
   main .part-two {
-    width: 100%;
     margin-left: 0rem;
     align-items: start;
     gap: 1.5rem;
-    margin-bottom: 10%;
   }
 
   .liner {
@@ -930,7 +876,7 @@ footer {
 
   section:nth-of-type(2) {
     padding: 0;
-    min-height: 60vh;
+    min-height: 70vh;
   }
 
   section .part-two {
@@ -944,7 +890,192 @@ footer {
   }
   .footer-links {
     display: flex;
-    gap: auto;
+    gap: 1rem;
+    padding-right: 0;
+    justify-content: space-between;
+  }
+
+  footer .logo > * {
+    padding-right: 0;
+    padding-top: 1.5rem;
+  }
+
+  footer .icons > * {
+    padding-right: 0rem;
+  }
+
+  footer .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  footer .logo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+  header {
+    min-height: 13dvh;
+    background-color: #a02279;
+    color: #ffffff;
+  }
+
+  nav #menu1 {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    padding: 0 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    padding-top: 1.5rem;
+  }
+
+  nav .search-top {
+    display: flex;
+  }
+  nav menu {
+    display: none;
+  }
+
+  nav .logo {
+    display: flex;
+  }
+
+  nav button {
+    border: 1px solid white;
+    border-radius: 0;
+  }
+
+  nav .search {
+    display: block;
+    border: 1px solid white;
+    height: 2rem;
+  }
+
+  nav .logo img {
+    display: none;
+  }
+
+  nav .logo .logo2 {
+    display: block;
+    padding-right: 0.5rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav .logo .logo2 img {
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  main h2 {
+    padding-top: 2rem;
+  }
+
+  main .part-two img {
+    max-height: 9rem;
+  }
+
+  main .part-two .group1 > img,
+  .group2 > img {
+    margin-bottom: 1.5rem;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  main .part-two .group1 {
+    margin-top: 0;
+    gap: 1.5rem;
+    float: none;
+  }
+
+  main .part-two .group2 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+    float: none;
+    margin: auto;
+  }
+
+  main {
+    padding: 0 1.3rem;
+    flex-direction: column;
+  }
+
+  main .part-one {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  main .part-two {
+    margin-left: 0rem;
+    align-items: start;
+    gap: 1.5rem;
+    margin: auto;
+  }
+
+  .liner {
+    padding: 0.5rem 2rem;
+    display: none;
+  }
+
+  .liner2 {
+    padding: 0.5rem 2rem;
+    display: block;
+    min-height: 9vh;
+    background-color: #a02279;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .liner2 img {
+    max-height: 2rem;
+  }
+
+  .card-parent {
+    gap: 2rem;
+    padding: 2.2rem 1.5rem;
+    justify-content: center;
+  }
+
+  section .part-one {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  section:nth-of-type(2) {
+    padding: 0;
+    min-height: 70vh;
+  }
+
+  section .part-two {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0;
+  }
+  .footer-links {
+    display: flex;
+    gap: 6rem;
     padding-right: 0;
   }
 
@@ -964,7 +1095,189 @@ footer {
     padding-top: 2rem;
   }
 
-  .logo {
+  footer .logo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1023px) {
+  header {
+    min-height: 13dvh;
+    background-color: #a02279;
+    color: #ffffff;
+  }
+
+  nav #menu1 {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    padding: 0 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    padding-top: 1.5rem;
+  }
+
+  nav .search-top {
+    display: flex;
+  }
+  nav menu {
+    display: none;
+  }
+
+  nav .logo {
+    display: flex;
+  }
+
+  nav button {
+    border: 1px solid white;
+    border-radius: 0;
+  }
+
+  nav .search {
+    display: block;
+    border: 1px solid white;
+    height: 2rem;
+  }
+
+  nav .logo img {
+    display: none;
+  }
+
+  nav .logo .logo2 {
+    display: block;
+    padding-right: 0.5rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav .logo .logo2 img {
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  main h2 {
+    padding-top: 2rem;
+  }
+
+  main .part-two img {
+    max-height: 25rem;
+  }
+
+  main .part-two .group1 > img,
+  .group2 > img {
+    margin-bottom: 1.5rem;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  main .part-two .group1 {
+    margin-top: 0;
+    gap: 1.5rem;
+    float: none;
+  }
+
+  main .part-two .group2 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+    float: none;
+    margin: auto;
+  }
+
+  main {
+    padding: 0 1.3rem;
+    flex-direction: column;
+  }
+
+  main .part-one {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  main .part-two {
+    margin-left: 0rem;
+    align-items: start;
+    gap: 1.5rem;
+  }
+
+  .liner {
+    padding: 0.5rem 2rem;
+    display: none;
+  }
+
+  .liner2 {
+    padding: 0.5rem 2rem;
+    display: block;
+    min-height: 9vh;
+    background-color: #a02279;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .liner2 img {
+    max-height: 2rem;
+  }
+
+  .card-parent {
+    gap: 2rem;
+    padding: 2.2rem 1.5rem;
+    justify-content: center;
+  }
+
+  section .part-one {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  section:nth-of-type(2) {
+    padding: 0;
+    min-height: 70vh;
+  }
+
+  section .part-two {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0;
+  }
+  .footer-links {
+    display: flex;
+    padding-right: 0;
+  }
+
+  footer .logo > * {
+    padding-right: 0;
+    padding-top: 1.5rem;
+  }
+
+  footer .icons > * {
+    padding-right: 0rem;
+  }
+
+  footer .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  footer .logo {
     align-self: center;
     display: flex;
     flex-direction: column;
